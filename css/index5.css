@@ -1,0 +1,948 @@
+.w::before,
+.w::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
+    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+    color: #333;
+    min-width: 1226px;
+}
+
+.toubu {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.toubu-box {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+
+}
+
+.toubu a {
+    font-size: 12px;
+    color: #b0b0b0;
+    text-decoration: none;
+    display: block;
+}
+
+.toubu a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.toubu .shu {
+    color: #424242;
+    font-size: 12px;
+    margin: 0px 8px;
+}
+
+.toubu-1,
+.toubu li,
+.toubu i {
+    float: left;
+}
+
+.toubu-1 .app {
+    position: relative;
+}
+
+.toubu-1 .erwm {
+    /* display: none; */
+    width: 124px;
+    /* height: 148px; */
+    height: 0;
+    overflow: hidden;
+    line-height: 1;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+    position: absolute;
+    left: -40px;
+    transition: all .3s;
+    z-index: 999;
+}
+
+.toubu-1-daohang-1:hover .app::after {
+    /* .app::after{ */
+    content: '';
+    /* display:none; */
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: none;
+    border-bottom: 8px #ffffff solid;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+}
+
+.toubu-1-daohang-1:hover .erwm,
+/* .toubu-1-daohang-1:hover .app::after */
+.toubu-1-daohang-1:hover::after {
+    display: block;
+    height: 148px;
+}
+
+.toubu-1 .erwm img {
+    width: 90px;
+    margin: 17px;
+    margin-bottom: 10px;
+}
+
+.toubu-1 .erwm samp {
+    font-size: 14px;
+    color: #000;
+}
+
+
+
+.toubuda2 {
+    width: 100%;
+    position: relative;
+}
+
+/* .app .xsj{
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top: none;
+    border-bottom:8px #ffffff solid;
+  position: absolute;
+  top:32px;
+  
+  z-index: 9;
+    
+} */
+.toubu-2,
+.toubu-3 {
+    float: right;
+    position: relative;
+}
+
+
+.toubu-3 a {
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+    margin-left: 25px;
+    position: relative;
+}
+
+.toubu-3 i {
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.toubu-3:hover a {
+    background-color: #ffffff;
+    color: #FF6700;
+}
+
+.toubu-3 .wuc {
+    width: 320px;
+    height: 0px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40px;
+    left: -175px;
+    z-index: 99;
+    transition: all .3s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+.toubu-3:hover .wuc {
+    height: 100px;
+}
+
+.wuc .wuc-wz {
+    line-height: 100px;
+    margin-left: 52px;
+}
+
+.toubu-box2 {
+    width: 100%;
+}
+
+.toubu2 {
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* .toubu-4 img{
+    position: relative;
+} */
+/* 缩小 */
+.toubu-4 img:active {
+    /* transition: all 0.3s; */
+    transform: scale(.9);
+}
+
+.toubu-4 a {
+    float: left;
+    margin-top: 22px;
+}
+
+.toubu-5 {
+    float: left;
+    margin-left: 7px;
+    padding-left: 60px;
+}
+
+.toubu-5>li {
+    float: left;
+}
+
+.toubu-5 .fenll {
+    position: relative;
+}
+
+.fenl-daohang {
+    width: 234px;
+    height: 420px;
+    background-color: rgba(134, 134, 134, 0.3);
+    position: absolute;
+    z-index: 99;
+    left: -122px;
+    padding: 20px 0;
+}
+
+.fenll .fenl-daohang a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    margin: 0;
+    color: #fff;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+.fenll .fenl-daohang a:hover {
+    background-color: #FF6700;
+    color: #fff;
+}
+
+.fenll .fenl-daohang i {
+    float: right;
+    line-height: 42px;
+    font-size: 16px;
+}
+
+.toubu-5 li a {
+    display: block;
+    margin-right: 20px;
+    line-height: 100px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.toubu-5 a:hover {
+    color: #FF6700;
+}
+
+.toubu-5 .fenl {
+    visibility: hidden;
+}
+
+.toubu-5 .daxl {
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    transition: all 0.3s;
+    z-index: 999;
+}
+
+.toubu-5 .ydong:hover~.daxl,
+.daxl:hover {
+    width: 100%;
+    border-top: 1px rgb(224, 224, 224) solid;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 7px 3px rgba(0, 0, 0, .3);
+    height: 228px;
+}
+
+.toubu-6 {
+    width: 294px;
+    height: 50px;
+    background-color: #000;
+    float: right;
+    margin-top: 25px;
+}
+
+.ss .ssk {
+    box-sizing: border-box;
+    width: 244px;
+    height: 50px;
+    padding: 10px;
+    float: left;
+    border: 1px rgb(224, 224, 224) solid;
+    font-size: 16px;
+    outline: none;
+}
+
+.ss .ann {
+    width: 50px;
+    height: 50px;
+    border: 1px rgb(224, 224, 224) solid;
+    border-left: none;
+    color: rgb(97, 97, 97);
+    font-size: 18px;
+    background-color: #ffffff;
+    float: left;
+}
+
+.ss .ssk:focus,
+.ss .ssk:focus+button {
+    border-color: #FF6700;
+}
+
+.ss .ann:hover {
+    background-color: #FF6700;
+    border: none;
+    color: #fff;
+}
+
+.toubu-box3 {
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.Mi-tup li {
+    position: absolute;
+}
+
+.yuan {
+    position: absolute;
+    bottom: 26px;
+    right: 35px;
+}
+
+.yuan a {
+    height: 6px;
+    width: 6px;
+    border: 2px rgba(77, 77, 77) solid;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 100px;
+    z-index: 999;
+    float: left;
+    margin-left: 8px;
+}
+
+.yuan a:hover,
+.yuan1 {
+    background-color: rgb(110, 108, 108);
+}
+
+.zy a {
+    position: absolute;
+    top: 195px;
+}
+
+.zy .y {
+    height: 70px;
+    width: 30px;
+    line-height: 70px;
+    font-size: 40px;
+    padding-left: 10px;
+    color: rgb(168, 166, 166);
+    position: absolute;
+    left: 1186px;
+}
+
+.zy .zhh {
+    width: 30px;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 10px;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 234px;
+    color: rgb(168, 166, 166);
+    z-index: 99;
+}
+
+.zy .zhh:hover {
+    color: #fff;
+    background-color: #292626;
+}
+
+.zy .y:hover {
+    color: #ffffff;
+    background-color: #292626;
+}
+
+.guding {
+    width: 26px;
+    ;
+    height: 206px;
+    background-color: #000;
+    position: fixed;
+    bottom: 75px;
+    right: 0;
+    /* right: 50%;
+margin-right: -639px; */
+}
+
+.da {
+    width: 1226px;
+    height: 170px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 14px;
+    padding-bottom: 25px;
+
+}
+
+.da .da-1 {
+    width: 234px;
+    height: 168px;
+    float: left;
+    background-color: #5f5750;
+    margin-right: 14px;
+    padding-top: 2px;
+}
+
+.da .da-1 a {
+    position: relative;
+}
+
+.da .da-1 a::before {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    background-color: #665e57;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+.da .da-1 a::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    background-color: #665e57;
+    left: 0px;
+    top: 6px;
+
+
+}
+
+.da-1 a {
+    display: block;
+    float: left;
+    width: 76px;
+    height: 84px;
+    text-decoration: none;
+    color: #cfccca;
+    font-size: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 2px;
+}
+
+.da-1 .iconfont {
+    display: block;
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+.da-1 a:hover {
+    color: #fff;
+}
+
+.da-2 a {
+    float: left;
+    height: 170px;
+    margin-right: 15px;
+    transition: all 0.4s;
+}
+
+.da-2 a:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    /* position: relative;
+    top: -1px; */
+}
+
+.da .da-2 a:last-child {
+    margin-right: 0%;
+    /* width:300px; */
+}
+
+.da .da-2 img {
+    height: 170px;
+}
+
+.box4-jitishanpin {
+    width: 100%;
+    height: auto;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 25px;
+}
+
+.tup-cang {
+    width: 1226px;
+    margin: 0 auto;
+    padding: 25px 0;
+    height: 120px;
+}
+
+.tup-k {
+    width: 1226px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    height: 675px;
+}
+
+.tup-k li {
+    float: left;
+}
+
+.box4-jitishanpin .ztys {
+    white-space: 1226px;
+    height: 58px;
+}
+
+.ztys .tup-h2,
+.ztys .tup-h3 {
+    margin-left: 30px;
+    height: 42px;
+}
+
+.ztys .tup-h2:hover,
+.ztys .tup-h3:hover {
+    border-bottom: 2px #FF6700 solid;
+}
+
+.tup-k .buji-k1 {
+    display: block;
+    width: 234px;
+    height: 614px;
+    position: relative;
+    top: 0;
+    transition: all 0.4s;
+}
+
+.tup-k .buji-k11 {
+    display: block;
+    width: 234px;
+    height: 614px;
+}
+
+.buji-k11 img {
+    vertical-align: top;
+}
+
+.buji-k11 .buji-k11-1 {
+    margin-bottom: 14px;
+}
+
+.buji-k11 .buji-k11-2,
+.buji-k11 .buji-k11-1 {
+    position: relative;
+    top: 0;
+    transition: all 0.4s;
+}
+
+.tup-k .buji-k1:hover,
+.tup-k .buji-k2:hover,
+.tup-k .buji-k3:hover,
+.tup-k .buji-k:hover,
+.buji-k11 .buji-k11-2:hover,
+.buji-k11 .buji-k11-1:hover,
+.tup-s li:hover {
+    position: relative;
+    top: -2px;
+    box-shadow: 0px 10px 30px rgba(57, 57, 57, 0.2);
+}
+
+.tup-k .buji-k,
+.tup-k .buji-k2 {
+    width: 234px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 14px;
+    margin-bottom: 14px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    top: 0;
+    transition: all 0.4s;
+}
+
+.tup-k .buji-k2 {
+    width: 174px;
+    height: 50px;
+    padding: 46px 30px;
+}
+
+.tup-k .buji-k3 {
+    float: left;
+    height: 142px;
+    width: 234px;
+    background-color: #fff;
+}
+
+
+.buji-k img {
+    width: 165px;
+    margin-top: 20px;
+}
+
+.buji-k .zt-1 {
+    font-size: 14px;
+    color: #000;
+    margin-top: 5px;
+    margin-left: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 210px;
+}
+
+.buji-k .zt-2 {
+    color: rgb(166, 162, 166);
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 210px;
+}
+
+.buji-k .zt-3 {
+    margin-top: 10px;
+    color: #FF6700;
+}
+
+.buji-k3 {
+    width: 234px;
+    height: 142px;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: #fff;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    top: 0;
+    transition: all 0.4s;
+    position: relative;
+}
+
+.buji-k3 .zt-1 {
+    font-size: 14px;
+    color: #000;
+    float: left;
+    width: 90px;
+    padding-top: 40px;
+    padding-left: 30px;
+    white-space: normal;
+}
+
+.buji-k3 .zt-2 {
+    color: rgb(40, 39, 40);
+    font-size: 14px;
+    margin-top: 5px;
+    position: absolute;
+    left: 30px;
+    top: 57px;
+}
+
+.buji-k3 .zt-3 {
+    margin-top: 10px;
+    color: #FF6700;
+    float: left;
+    margin-left: 30px;
+}
+
+.buji-k3 img {
+    float: right;
+    margin-top: 34px;
+    margin-right: 22px;
+    width: 74px;
+}
+
+.buji-k2 .zt-4 {
+    font-size: 18px;
+    color: #000;
+    float: left;
+    margin-top: 3px;
+}
+
+.buji-k2 .zt-5 {
+    font-size: 50px;
+    color: #FF6700;
+    float: right;
+}
+
+.buji-k2 .zt-6 {
+    color: #777471;
+    float: left;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+}
+
+.buji-k samp {
+    color: rgb(166, 162, 166);
+    text-decoration: line-through;
+    margin-left: 7px;
+}
+
+.tup-s h2,
+.tup-k h2 {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 58px;
+    float: left;
+}
+
+.ztys>a {
+    text-decoration: none;
+    line-height: 58px;
+    float: right;
+    font-size: 16px;
+    color: rgba(42, 42, 42, 0.6);
+    transition: all 0.3s;
+}
+
+.tup-s .tup-h1::after,
+.tup-k .tup-h1::after {
+    content: '\f138';
+    float: right;
+    font-size: 16px;
+    margin-left: 10px;
+    /* line-height: 58px; */
+    color: rgb(176, 176, 176);
+    transition: all 0.3s;
+}
+
+/* .ztys > i{
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(176, 176, 176);
+} */
+.ztys a:hover,
+.tup-h1:hover::after {
+    transition: all 0.3s;
+    color: #FF6700;
+}
+
+.tup-s {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.tup-s .ztys {
+    width: 1226px;
+    line-height: 58px;
+}
+
+.tup-s img {
+    vertical-align: top;
+}
+
+.tup-s a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.tup-s .box-hz {
+    width: 296px;
+    height: 75px;
+    padding-top: 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.tup-s .bf::after {
+    content: '\f431';
+    position: absolute;
+    top: 0;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.3);
+    left: 30px;
+    top: 130px;
+    transition: all .3s;
+}
+
+.tup-s :hover::after {
+    color: #FF6700;
+}
+
+.tup-s li {
+    float: left;
+    margin-right: 14px;
+    position: relative;
+    top: 0;
+    height: 282px;
+    transition: all .3s;
+}
+
+.tup-s li:last-child {
+    margin-right: 0;
+}
+
+.tup-s samp {
+    color: #9fa5a8;
+    font-size: 12px;
+}
+
+.dibu-box {
+    width: 100%;
+    height: 475px;
+    background-color: #fff;
+
+}
+
+.dibu-box .dibu-box1 {
+    width: 1226px;
+    height: 475px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.dibu-daohang {
+    width: 1226px;
+    margin: 0px auto;
+}
+
+.dibu-daohang ul {
+    width: 1188px;
+    height: 59px;
+    border-bottom: 1px rgb(231, 226, 226) solid;
+    padding-top: 20px;
+    padding-left: 38px;
+}
+
+.dibu-daohang li,
+.dibu-daohang samp {
+    float: left;
+
+}
+
+.dibu-daohang a {
+    display: block;
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.dibu-daohang samp {
+
+    color: #d7d3ce;
+    margin: 8px 50px;
+}
+
+.dibu-daohang i {
+    position: relative;
+    font-size: 25px;
+    top: 1px;
+}
+
+.dibu-daohang a:hover,
+.dubu-hang a:hover {
+    color: #FF6700;
+}
+
+.dibu-box .dubu-hang {
+    width: 954px;
+    height: 370px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-evenly;
+    margin-top: 35px;
+    position: absolute;
+    left: 44px;
+}
+
+.dubu-hang li {
+
+    width: 135px;
+
+}
+
+.dubu-hang a {
+    float: left;
+    overflow: visible;
+    text-decoration: none;
+    color: rgb(131, 126, 126);
+    overflow: hidden;
+    margin-bottom: 8px;
+    margin-right: 20px;
+}
+
+.dubu-hang li:nth-child(1) a{
+    margin-right: 50px;
+}
+
+.dibu-box1 .dibu-z {
+    width: 271px;
+    height: 87px;
+    border-left: 1px rgb(231, 226, 226) solid;
+    float: right;
+    margin-top: 35px;
+}
+
+.dibu-z a {
+    display: block;
+    width: 120px;
+    height: 25px;
+    border: 1px #FF6700 solid;
+    color: #FF6700;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-left: 75px;
+    transition: all .4s;
+    margin-top: 2px;
+}
+
+.dibu-z a:hover {
+    color: #fff;
+    background-color: #FF6700;
+    transition: all .4s;
+}
+
+.dibu-z p,
+.dibu-z a {
+    text-align: center;
+}
+
+.dibu-z .p1 {
+    font-size: 20px;
+    color: #FF6700;
+}
+
+.didi {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+}
